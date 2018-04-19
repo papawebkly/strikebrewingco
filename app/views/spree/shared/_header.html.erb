@@ -37,7 +37,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+                <!--figure id="logo" class="columns six" data-hook><%#= logo %></figure-->
                 <%#= link_to root_path, class: 'navbar-brand' do %>
                     <!--EStore<span class="logo-dot accent-bg"></span>-->
                 <% #end %>
@@ -65,6 +65,7 @@
                             <%= nav_tree(taxonomy.root, @taxon, 1) %>
                         </li>
                     <% end %>
+                    <figure id="logo" class="columns six customed-logo" data-hook><%= logo 'logo.png' %></figure>
 
                     <li><%= link_to 'Blog', '/blog' %></li>
                     <li><%= link_to 'About', '/about' %></li>

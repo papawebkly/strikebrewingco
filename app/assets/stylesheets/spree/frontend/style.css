@@ -172,7 +172,7 @@ header.secondary.small .parallax-background {
 body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #8d8d8d;
+  color: white;
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
@@ -189,7 +189,7 @@ h5,
 h6 {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #323237;
+  color: white;
   margin: 0px;
 }
 
@@ -1946,7 +1946,7 @@ a.load-more {
 
 .navbar-default .navbar-nav li a {
   font-size: 12px;
-  color: #323237;
+  color: white;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -2957,4 +2957,11 @@ img.mfp-img {
 }
 body#login{
   margin-top:40px;
+}
+.customed-logo{
+  float:left;
+}
+.customed-logo img{
+  width:200px;
+  max-width:200px;
 }
