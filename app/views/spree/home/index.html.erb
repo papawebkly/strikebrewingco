@@ -1,0 +1,71 @@
+
+<header class="fullscreen-element">
+	<%= render partial: 'spree/shared/fullscreen_header' %>
+</header>
+
+<div class="action-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="#"><span data-icon="v" class="icon"></span> <span class="text">Fast Delivery</span></a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#"><span data-icon="/" class="icon"></span> <span class="text">Adjustable</span></a>
+      </div>
+      <div class="col-sm-4">
+        <a href="#"><span data-icon="7" class="icon"></span> <span class="text">Inovative</span></a>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
+
+<section>
+  <div class="background-image-holder overlay" data-stellar-background-ratio="0.9">
+    <img class="background-image" alt="Background Image" src="/assets/bg-2.jpg">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 text-left">
+        <h2 class="page-title">For your familly</h2>
+        <p class="description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
+        <a href="#" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div><!--end of row-->
+  </div><!--end of container-->
+</section>
+
+<div data-hook="homepage_products" id="products" class="container">
+  <% cache(cache_key_for_products) do %>
+    <%= render partial: 'spree/shared/products', locals: { products: @products } %>
+  <% end %>
+</div>
+
+<section>
+  <div class="background-image-holder on-page overlay">
+    <img class="background-image" alt="Background Image" src="/assets/bg-3.jpg">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-7 text-right">
+        <h2 class="page-title">Modern Chair<span class="accent-color">.</span></h2>
+        <p class="description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
+        <a href="#" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div><!--end of row-->
+  </div><!--end of container-->
+</section>
+
+<div class="map section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="map-wrapper">
+                    <div id="map" data-lat="40.7033127" data-long="-73.979681"></div>
+                    <a href="#" class="directions"><i class="fa fa-location-arrow"></i></a>
+                </div>
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
