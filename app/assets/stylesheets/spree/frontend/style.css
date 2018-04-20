@@ -172,7 +172,7 @@ header.secondary.small .parallax-background {
 body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: white;
+  color: #8d8d8d;
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
@@ -189,7 +189,7 @@ h5,
 h6 {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: white;
+  color: #323237;
   margin: 0px;
 }
 
@@ -1396,7 +1396,7 @@ section.products-grid .product .product-price {
 }
 
 footer.footer {
-  background: #f2f3f5;
+  background: #171717;
   padding: 85px 0px;
 }
 
@@ -1448,39 +1448,37 @@ footer.footer .footer-navigation li:first-child {
   }
 }
 
-footer.footer .accepted-payments {
+.accepted-payments {
   clear: both;
   display: table;
   position: relative;
-  padding: 40px 0px;
+  padding: 10px 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  border-top: 1px solid #e8eced;
-  border-bottom: 1px solid #e8eced;
+  margin-top: 10px;
+  margin-bottom: 5px;
   width: 100%;
 }
 
-footer.footer .accepted-payments li {
+.accepted-payments li {
   list-style-type: none;
   float: left;
-  font-size: 38px;
-  width: 20%;
+  font-size: 24px;
+  width: 8%;
   text-align: center;
 }
 
-footer.footer .accepted-payments li a {
+.accepted-payments li a {
   color: #c9c9c9;
 }
 
-footer.footer .accepted-payments li:first-child {
+.accepted-payments li:first-child {
   margin-left: 0px;
 }
 
 @media screen and (max-width: 768px) {
-  footer.footer .accepted-payments li {
-    font-size: 26px;
+  .accepted-payments li {
+    font-size: 18px;
   }
 }
 
@@ -2964,4 +2962,52 @@ body#login{
 .customed-logo img{
   width:200px;
   max-width:200px;
+}
+.fullscreen-element h1{
+  color:white;
+}
+.fullscreen-element p{
+  color:white;
+}
+.secondary h1{
+  color:white;
+}
+.secondary p{
+  color:white;
+}
+.section-welcom{
+  padding-top:60px !important; padding-bottom:60px !important;
+}
+.section-welcom .sub-title h1{
+  color:#201713;
+}
+.section-welcom .sub-title p{
+  font-size:18px; line-height: 1.6em; letter-spacing: .4px;font-weight: 400; font-style: normal; color: rgba(0,0,0,.5);
+}
+.sub-title-right .right-title{
+  color:rgba(28,28,28,.8);font-weight: 300;font-style: normal;font-size: 15px;line-height: 1.4em;letter-spacing: .05em; text-transform: uppercase;
+}
+.sub-title-right .right-content{
+  font-size: 15px;line-height: 1.6em;letter-spacing: .4px;font-weight: 400;font-style: normal;color: rgba(0,0,0,.5);
+}
+.santa-cruz{
+  padding-top:60px !important
+}
+.santa-cruz h1{
+  color:black; text-transform:uppercase
+}
+.santa-cruz .right-content p{
+  color:rgba(0,0,0,.5);font-size: 15px;line-height: 1.6em;letter-spacing: .4px;font-weight: 400;font-style: normal;
+}
+.santa-cruz .bottom-content{
+  margin:30px;
+}
+.santa-cruz .bottom-content h2{
+  color:black;text-align:center;
+}
+.santa-cruz .bottom-content p{
+  text-align:center;font-size: 15px;line-height: 1.6em;letter-spacing: .4px;font-weight: 400;font-style: normal;color: rgba(0,0,0,.5);
+}
+.santa-cruz .bottom-content a{
+  width:174px; height: 74px; padding: 22px 35px;border-radius:0px; margin-top: 20px;letter-spacing: 1px;width: 200px;margin: auto;display: block; color:white; background: #272727;font-size:20px
 }

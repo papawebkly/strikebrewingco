@@ -63,7 +63,7 @@ a:focus {
 }
 
 .accent-bg {
-  background-color: #f57c00;
+  background-color: #1f1f1f;
 }
 
 .btn-default,
@@ -166,7 +166,7 @@ input[type="reset"]:active:visited {
   content: '';
   opacity: 0.9;
   z-index: 2;
-  background-color: #f57c00;
+  background-color: #1f1f1f;
 }
 
 .accent-bg {

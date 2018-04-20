@@ -1,29 +1,24 @@
 <section class="newsletter accent-bg">
     <div class="background-image-holder overlay accent" data-stellar-background-ratio="0.9">
-        <%= image_tag('1600x900.png', class: 'background-image', alt: 'Background Image') %>
+        <%= image_tag('/assets/1600x900.png', class: 'background-image', alt: 'Background Image') %>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-5 text-left">
-                <h2 class="page-title">Join our newsletter</h2>
-                <p>Bemporibus autem quibusdam et aut officiis debitis autem quibusdam et aut officiis debitis.</p>
-            </div>
-            <div class="col-md-4">
-                <form class="newsletter-form">
-                    <input type="text" name="email" id="email" placeholder="Your email address">
-                </form>
-            </div>
-            <div class="col-md-3">
-                <a href="#" class="btn btn-primary">Join Now</a>
+            <div class="col-md-12 col-md-offset-4">
+                <ul class="accepted-payments">
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
             </div>
         </div><!--end of row-->
     </div><!--end of container-->
 </section>
 
-<footer class="footer">
+<footer class="footer" sty>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">
                 <ul class="footer-navigation">
                     <li class="active"><%= link_to 'Home', root_path %></li>
                     <li><%= link_to 'Blog', '/blog' %></li>
@@ -34,15 +29,8 @@
                         <% end %>
                     </li>
                 </ul>
-                <ul class="accepted-payments">
-                    <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-                    <li><a href="#"><i class="fa fa-paypal"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cc-stripe"></i></a></li>
-                    <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-                </ul>
                 <div class="copyright">
-                    <p>Copyright © 2018 EStore. Created by Designifyer.com</p>
+                    <p>STRIKE BREWING COMPANY, 2099 S 10TH ST, SAN JOSE, CA, 95112, UNITED STATES(877) 855-8620</p>
                 </div>
             </div>
         </div><!-- /.row -->

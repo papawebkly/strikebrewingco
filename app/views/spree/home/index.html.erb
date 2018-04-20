@@ -3,69 +3,124 @@
 	<%= render partial: 'spree/shared/fullscreen_header' %>
 </header>
 
-<div class="action-bar">
+<section class="product-list section-welcom">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <a href="#"><span data-icon="v" class="icon"></span> <span class="text">Fast Delivery</span></a>
-      </div>
-      <div class="col-sm-4">
-        <a href="#"><span data-icon="/" class="icon"></span> <span class="text">Adjustable</span></a>
-      </div>
-      <div class="col-sm-4">
-        <a href="#"><span data-icon="7" class="icon"></span> <span class="text">Inovative</span></a>
+      <div class="col-md-12">
+        <div class="product">
+          <div class="row">
+            <div class="col-md-7 col-xs-12">
+              <div class="sub-title">
+                <h1>Welcome to Strike <br>Brewing Co.</h1>
+                <p><span>Our lineup of craft beers includes our year round lineup, special seasonal ales, and our experimental Bullpen Series.&nbsp;Come visit our brewery and warehouse taproom in San Jose, California.</span></p>
+              </div>
+              <div style="display: block;position: relative;overflow: hidden;height: auto; height: 286px; margin-top: 17px;margin-bottom: 17px;">
+                <img src="/assets/beersontable.png" alt="" style="overflow: hidden; position: absolute; top: -30px !important; width: 100%;">
+              </div>
+              <div><p style="font-size: 15px;line-height: 1.6em;letter-spacing: .4px;font-weight: 400;font-style: normal;color: rgba(0,0,0,.5);">Check out what's <a href="#">on tap right now</a>.</p></div>
+            </div>
+            <div class="col-md-4 col-md-offset-1 sub-title-right">
+              <div class="product-details">
+                <h4 class="right-title">HOURS</h4>
+                <p class="right-content">Mon&nbsp; &nbsp; 3pm - 9pm<br>Tue&nbsp; &nbsp; 3pm - 9pm<br>Wed&nbsp; &nbsp;3pm - 9pm<br>Thu&nbsp; &nbsp; 3pm - 9pm<br>Fri&nbsp; &nbsp; &nbsp; &nbsp;3pm - 10pm<br>Sat&nbsp; &nbsp; &nbsp; 12pm - 10pm<br>Sun&nbsp; &nbsp; &nbsp;12pm - 8pm</p>
+                <h4 class="right-title">LOCATION</h4>
+                <p class="right-content">2099 S 10th Street Unit 30<br>San José, CA 95112<br><a target="_blank" href="https://www.google.com/maps/place/Strike+Brewing+Co.+%26+Warehouse+Taproom/@37.3104593,-121.8602667,17z/data=!3m1!4b1!4m5!3m4!1s0x808e332021ebf2db:0x856b0d2e09c9f442!8m2!3d37.3104593!4d-121.858078">Get </a><a target="_blank" href="https://www.google.com/maps/place/Strike+Brewing+Co.+%26+Warehouse+Taproom/@37.3104593,-121.8602667,17z/data=!3m1!4b1!4m5!3m4!1s0x808e332021ebf2db:0x856b0d2e09c9f442!8m2!3d37.3104593!4d-121.858078">Directions</a></p>
+                <h4 class="right-title">WiFi</h4>
+                <p class="right-content">Free!</p>
+                <h4 class="right-title">Phone</h4>
+                <p class="right-content">(877) 855-8620<br>or <%= link_to 'email us', '/contact' %>!</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div><!-- /.row -->
   </div><!-- /.container -->
-</div>
-
-<section>
-  <div class="background-image-holder overlay" data-stellar-background-ratio="0.9">
-    <img class="background-image" alt="Background Image" src="/assets/bg-2.jpg">
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 text-left">
-        <h2 class="page-title">For your familly</h2>
-        <p class="description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
-        <a href="#" class="btn btn-primary">Shop Now</a>
-      </div>
-    </div><!--end of row-->
-  </div><!--end of container-->
 </section>
 
-<div data-hook="homepage_products" id="products" class="container">
-  <% cache(cache_key_for_products) do %>
-    <%= render partial: 'spree/shared/products', locals: { products: @products } %>
-  <% end %>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  style="width:100%">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="d-block w-100" src="/assets/s1.jpg" alt="First slide"  style="width:100%">
+    </div>
+    <div class="item">
+      <img class="d-block w-100" src="/assets/s2.jpg" alt="Second slide"  style="width:100%">
+    </div>
+    <div class="item">
+      <img class="d-block w-100" src="/assets/s3.png" alt="Third slide" style="width:100%">
+    </div>
+    <div class="item">
+      <img class="d-block w-100" src="/assets/s4.jpg" alt="Firth slide" style="width:100%">
+    </div>
+    <div class="item">
+      <img class="d-block w-100" src="/assets/s5.jpg" alt="Fifth slide" style="width:100%">
+    </div>
+    <div class="item">
+      <img class="d-block w-100" src="/assets/s6.jpg" alt="Sixth slide" style="width:100%">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"><</span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true">></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
-<section>
-  <div class="background-image-holder on-page overlay">
-    <img class="background-image" alt="Background Image" src="/assets/bg-3.jpg">
-  </div>
+<section class="blog-list santa-cruz">
   <div class="container">
     <div class="row">
-      <div class="col-sm-5 col-sm-offset-7 text-right">
-        <h2 class="page-title">Modern Chair<span class="accent-color">.</span></h2>
-        <p class="description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates depudiandae sint et molestiae.</p>
-        <a href="#" class="btn btn-primary">Shop Now</a>
-      </div>
-    </div><!--end of row-->
-  </div><!--end of container-->
-</section>
-
-<div class="map section">
-    <div class="container">
+      <div class="sqs-block-content" id="yui_3_17_2_1_1524202157247_4208">
+        <h1>SAnta Cruz CLASSIC BLONDE ALE &amp;<br>Screaming Hand IMPERIAL AMBER ALE</h1></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <div class="row">
-            <div class="col-md-12">
-                <div class="map-wrapper">
-                    <div id="map" data-lat="40.7033127" data-long="-73.979681"></div>
-                    <a href="#" class="directions"><i class="fa fa-location-arrow"></i></a>
-                </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="thumbnail">
+              <img src="/assets/squarespace.jpg" alt="">
             </div>
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-</div>
+          </div>
+          <div class="col-md-8 right-content">
+            <div class="post-details">
+              <p>We've teamed up with Santa Cruz Skateboards to create the crisp, refreshing session craft beer "Classic Dot Blonde Ale". Coming in at just 4.5% ABV, it's a refreshing way to finish the day or keep on going.</p>
+              <p>Santa Cruz Classic Dot Blonde Ale is a crisp refresher,&nbsp;now available throughout the state of California in 12oz. cans, 22oz bottles, and draft.</p>
+              <p>You can pick some up at these <a target="_blank" href="http://www.strikebrewingco.com/where-to-buy">California locations</a>.</p>
+              <h2 class="text-align-center">&nbsp;</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.row -->
+    <div class="row">
+      <hr>
+    </div>
+    <div class="row bottom-content">
+      <div class="sqs-block-content">
+        <h2 class="text-align-center">Always be in the know!</h2>
+        <p class="text-align-center">Sign up with your email address to received news and updates.</p>
+        <a href="#" class="btn">SIGN UP</a>
+      </div>
+
+    </div>
+  </div><!-- /.container -->
+  
+</section>
+
+<!--div data-hook="homepage_products" id="products" class="container">
+  <%# cache(cache_key_for_products) do %>
+    <%#= render partial: 'spree/shared/products', locals: { products: @products } %>
+  <% #end %>
+</div-->
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
