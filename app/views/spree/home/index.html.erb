@@ -15,7 +15,7 @@
                 <p><span>Our lineup of craft beers includes our year round lineup, special seasonal ales, and our experimental Bullpen Series.&nbsp;Come visit our brewery and warehouse taproom in San Jose, California.</span></p>
               </div>
               <div style="display: block;position: relative;overflow: hidden;height: auto; height: 286px; margin-top: 17px;margin-bottom: 17px;">
-                <img src="/assets/beersontable.png" alt="" style="overflow: hidden; position: absolute; top: -30px !important; width: 100%;">
+                <%= image_tag "/assets/beersontable.png", style: 'overflow: hidden; position: absolute; top: -30px !important; width: 100%;' %>
               </div>
               <div><p style="font-size: 15px;line-height: 1.6em;letter-spacing: .4px;font-weight: 400;font-style: normal;color: rgba(0,0,0,.5);">Check out what's <a href="#">on tap right now</a>.</p></div>
             </div>
@@ -49,22 +49,22 @@
   </ol>
   <div class="carousel-inner">
     <div class="item active">
-      <img class="d-block w-100" src="/assets/s1.jpg" alt="First slide"  style="width:100%">
+      <%= image_tag "s1.jpg", class:"d-block w-100", alt:"First slide", style:"width:100%" %>
     </div>
     <div class="item">
-      <img class="d-block w-100" src="/assets/s2.jpg" alt="Second slide"  style="width:100%">
+      <%= image_tag "s2.jpg", class:"d-block w-100", alt:"Second slide", style:"width:100%" %>
     </div>
     <div class="item">
-      <img class="d-block w-100" src="/assets/s3.png" alt="Third slide" style="width:100%">
+      <%= image_tag "s3.png", class:"d-block w-100", alt:"Third slide", style:"width:100%" %>
     </div>
     <div class="item">
-      <img class="d-block w-100" src="/assets/s4.jpg" alt="Firth slide" style="width:100%">
+      <%= image_tag "s4.jpg", class:"d-block w-100", alt:"Forth slide", style:"width:100%" %>
     </div>
     <div class="item">
-      <img class="d-block w-100" src="/assets/s5.jpg" alt="Fifth slide" style="width:100%">
+      <%= image_tag "s5.jpg", class:"d-block w-100", alt:"Fifth slide", style:"width:100%" %>
     </div>
     <div class="item">
-      <img class="d-block w-100" src="/assets/s6.jpg" alt="Sixth slide" style="width:100%">
+      <%= image_tag "s6.jpg", class:"d-block w-100", alt:"Six slide", style:"width:100%" %>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -88,7 +88,7 @@
         <div class="row">
           <div class="col-md-4 col-xs-12">
             <div class="thumbnail">
-              <img src="/assets/squarespace.jpg" alt="">
+              <%= image_tag "squarespace.jpg", alt:"" %>
             </div>
           </div>
           <div class="col-md-8 right-content">
