@@ -53,18 +53,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="collapse-navigation">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <%= link_to 'Home', root_path %>
-                    </li>
-                    
-                    <% @taxonomies.each do |taxonomy| %>
-                        <li class="dropdown">
-                            <%= link_to "#", data: { toggle: "dropdown" }, "aria-haspopup" => 'true', "aria-expanded" => 'true', "role" => 'button', class: 'dropdown-toggle' do %>
-                            <%= taxonomy.name %> <span class="fa fa-angle-down"></span>
-                            <% end %>
-                            <%= nav_tree(taxonomy.root, @taxon, 1) %>
-                        </li>
-                    <% end %>
+                    <li><%= link_to 'Home', root_path %></li>
+                    <li><%= link_to 'OUR BEERS', root_path %></li>
+                    <li><%= link_to "WHAT's ON TAP", root_path %></li>
+
                     <figure id="logo" class="columns six customed-logo" data-hook><%= logo 'logo.png' %></figure>
 
                     <li><%= link_to 'Blog', '/blog' %></li>
